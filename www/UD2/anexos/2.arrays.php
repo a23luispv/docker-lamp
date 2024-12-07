@@ -32,15 +32,40 @@
             ?>
             <br />
 
-            <p>2. Imprime los valores del array asociativo siguiente usando un foreach:</p>
+            <p>Prueba LUIS</p>
+            <?php
+            $pares = array();
+            for ($i = 1; $i <= 10; $i++) {
+                array_push($pares, $i * 2);
+            }
+            
+            // Imprimir el array original
+            print_r($pares);
+            
+            // Buscar el índice del valor 2
+            $index = array_search(6, $pares);
+            
+            // Si el valor se encuentra en el array, eliminarlo
+            if ($index !== false) {
+                unset($pares[$index]);
+            }
+            
+            // Reindexar el array para evitar "agujeros" en el índice
+            echo "<br />";
+            $pares = array_values($pares);
+            
+            // Imprimir el array modificado
+            print_r($pares);
+            ?>
+            <p><br />2. Imprime los valores del array asociativo siguiente usando un foreach:</p>
             <?php
             $v[1]=90;
             $v[10] = 200;
             $v['hola']=43;
             $v[9]='e';
-            foreach ($v as $e)
+            foreach ($v as $indi => $e)
             {
-                echo $e . '<br />';
+                echo 'indice: ' . $indi . ', valor: ' . $e . '<br />';
             }
             ?>
 
@@ -164,6 +189,21 @@
             }
             echo '<br /><br />';
             ?>
+
+            <p> TEST LUIS shuffle</p>
+
+            <?php
+
+            $array = array();
+            for ($i = 0; $i < 30; $i++){
+                array_push($array, $i);
+            }
+            print_r($array);
+            echo '<br />';
+            shuffle($array);
+            print_r($array);
+            echo '<br />';
+            ?>
    
             <p>2. Crea una matriz con los siguientes datos: `Batman`, `Superman`, `Krusty`, `Bob`, `Mel` y `Barney`.</p>
             <ul>
@@ -185,6 +225,10 @@
             echo '<br />';
             array_unshift($personajes, 'Apple', 'Melon', 'Watermelon');
             echo 'Matriz final : <br />';
+            print_r($personajes);
+            unset($personajes[0]);
+            $personajes = array_values($personajes);
+            echo '<br /> Matriz final 2 : <br />';
             print_r($personajes);
             ?>
 
@@ -250,6 +294,8 @@
                 ];
             }
             
+            print_r($array_ciudades);
+
             echo '<div class="table">';
             echo '<table class="table table-bordered mw-50 w-50" >';
             echo '<tr><th>Ciudad</th><th>País</th><th>Continente</th></tr>';
@@ -265,6 +311,29 @@
             echo '</table></div>';            
             ?>
 
+            <p>Test LUIS:<br /></p>
+            <?php
+
+            $misCiudades = explode(';', $informacion);
+
+            //print_r($misCiudades);
+            echo '<div class="table">';
+            echo '<table class="table table-bordered mw-50 w-50" >';
+            echo '<tr><th>Ciudad</th><th>País</th><th>Continente</th></tr>';
+
+            foreach ($misCiudades as $key => $valor){
+                $cityDetalle = explode(',',$valor);
+
+                echo '<tr>';
+                echo '<td>' . $cityDetalle[0] . '</td>';
+                echo '<td>' . $cityDetalle[1] . '</td>';
+                echo '<td>' . $cityDetalle[2] . '</td>';
+                echo '</tr>';
+
+            }
+            echo '</table></div>'; 
+
+            ?>
         </div>  
     </body>
 </html>

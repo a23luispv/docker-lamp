@@ -46,7 +46,8 @@
                         if ($valido)
                         {
                             echo "<p>La tarea $id se almacenó correctamente:</p>";
-                            echo "<ul><li>Descripción: $desc</li><li>Estado: $estado</li></ul>";
+                            echo "<ul><li>Descripción: $desc</li><li>Estado: $estado</li></ul><br/>";
+                            print_r($tareas);
                         }
                         else
                         {
