@@ -52,12 +52,16 @@
                                 <a href="https://manuais.pages.iessanclemente.net/plantillas/daw/dwcs-d/ud02/7.anexos/1.aplicacion_tienda/index.html" target="_blank">Boletín 1. Tienda</a><br />
                                 <a href="https://manuais.pages.iessanclemente.net/plantillas/daw/dwcs-d/ud02/7.anexos/2.aplicacion_donacion/index.html" target="_blank">Boletín 2. Donación</a><br />
                                 <a href="https://manuais.pages.iessanclemente.net/plantillas/daw/dwcs-d/ud03/8.tarea_ud03/index.html">Tarea</a>
+                                <br />
+                                <br />
                             </td>
                             <td>
                                 <a href="UD3" target="_blank">Ejemplos unidad</a><br />
-                                <a href="UD3/anexos/1.tienda.php" target="_blank">Solución 1. Tienda</a><br />
-                                <a href="UD3/anexos/2.donacion.php" target="_blank">Solución 2. Donación</a><br />
+                                <a href="UD3/anexos/tienda/index.php" target="_blank">Solución 1. Tienda</a><br />
+                                <a href="UD3/anexos/donaciones/index.php" target="_blank">Solución 2. Donación</a><br />
                                 <a href="UD3/entregaTarea_solucion" target="_blank">Solución Tarea</a><br />
+                                <br />
+                                <a href="UD3/anexos2/index.php">REPASO</a><br />
                             </td>
                         </tr>
                     </tbody>
